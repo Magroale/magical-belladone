@@ -1,22 +1,19 @@
 <template>
   <nav data-mdb-navbar-init class="navbar navbar-expand-lg navbar-light" style="background-color: #f8b2ca;">
-
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarCenteredExample"
+      <!-- <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarCenteredExample"
         aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse d-flex flex-column align-items-center justify-content-center"
-        id="navbarCenteredExample">
-        <div class="d-flex flex-grow-1 justify-content-center">
-          <a class="navbar-brand" href="/">
-            <h1 class="text-center fs-2 text-wrap" @click="selectTab('home')"
-              style="max-width: 20rem; color: #7b2052; font-family:'norwester';">
-              Magical Belladone</h1>
-          </a>
-        </div>
-        <div class="d-flex flex-row p-2" style="">
-          <ul class="navbar-nav mb-2 mb-lg-0">
+      </button> -->
+
+      <div class="collapse navbar-collapse d-flex flex-column justify-content-center" id="navbarCenteredExample">
+        <a class="navbar-brand" href="/">
+          <h1 class="text-center fs-2 text-wrap" @click="selectTab('home')"
+            style="max-width: 20rem; color: #7b2052; font-family:'norwester';">
+            Magical Belladone</h1>
+        </a>
+        <div class="d-flex flex-row justify-content-center">
+          <ul class="navbar-nav mb-2 mb-lg-0 me-4">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
                 aria-expanded="false" style="color: #7b2052;">
@@ -28,18 +25,21 @@
                     Examples</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" @click="selectTab('termsAndServices')" style="color: #7b2052;">Terms of Service</a>
+                  <a class="dropdown-item" @click="selectTab('termsAndServices')" style="color: #7b2052;">Terms of
+                    Service</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="https://forms.gle/XG8z9S88g3mer9Tz6" target="_blank" style="color: #7b2052;">Submit</a>
+                  <a class="dropdown-item" href="https://forms.gle/XG8z9S88g3mer9Tz6" target="_blank"
+                    style="color: #7b2052;">Submit</a>
                 </li>
               </ul>
             </li>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="https://t.me/Magical_Belladone" target="_blank" style="color: #7b2052;">Contact</a>
-              </li>
-            </ul>
+          </ul>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="https://t.me/Magical_Belladone" target="_blank"
+                style="color: #7b2052;">Contact</a>
+            </li>
           </ul>
         </div>
       </div>

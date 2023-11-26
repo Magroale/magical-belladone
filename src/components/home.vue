@@ -1,11 +1,27 @@
 <template>
     <div>
         <div class="bg-image d-flex justify-content-center align-items-center"
-            style="background-image: url('../assets/Portada.JPG'); height: 80vh;">
-            <h1 class="text-white text-center" style="font-size: 5rem; width: 25rem; font-family:'norwester';">MAGICAL BELLADONE</h1>
+            style="background-image: url('../assets/IMG_1139.JPG'); height: 90vh;">
+            <h1 class="text-white text-center" style="font-size: 5rem; width: 25rem; font-family:'norwester';">MAGICAL
+                BELLADONE</h1>
         </div>
-        <div class="d-flex justify-content-center mt-5 pt-1" style="height: 80vh;">
+        <div class="container"></div>
+        <!-- <div class="d-flex justify-content-center mt-5 pt-1" style="height: 80vh;">
             <div class="d-flex justify-content-center">
+                <img :src='imagen' class="img-fluid" alt="img" style="max-width:50vh; max-width: 70vh;" />
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center text-center" style="max-width:50vh;">
+                <h2 style="font-family: 'Franklin Gothic', sans-serif; color: #7b2052;" class="mb-3">
+                    About Me
+                </h2>
+                <p class="fs-5" style="font-family: 'Franklin Gothic', sans-serif; color: #7b2052;">
+                    {{ this.aboutme }}
+                </p>
+            </div>
+        </div> -->
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mt-5 pt-1"
+            style="">
+            <div class="d-flex justify-content-center mb-3 mb-md-0">
                 <img :src='imagen' class="img-fluid" alt="img" style="max-width:50vh; max-width: 70vh;" />
             </div>
             <div class="d-flex flex-column justify-content-center align-items-center text-center" style="max-width:50vh;">
