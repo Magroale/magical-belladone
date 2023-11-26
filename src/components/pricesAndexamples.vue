@@ -132,16 +132,12 @@ export default {
                 restricciones: "- Completely free background of your choice, I can work on any type of idea you have.",
             },
             {
-                ejemplos: '../assets/Illustration/IMG_1006.jpg',
+                ejemplos: '../assets/Illustration/Krow_Commission_Illustration.jpg',
                 restricciones: "- I can work in any format you ask me for, whether for printing or any other need.",
             },
             {
-                ejemplos: '../assets/Illustration/Krow_Commission_Illustration.jpg',
-                restricciones: "- The more detailed jobs may take my time, but I know I can meet your expectations.",
-            },
-            {
                 ejemplos: '../assets/Illustration/Krow_Commission_Illustration_flat.jpeg',
-                restricciones: "",
+                restricciones: "- The more detailed jobs may take my time, but I know I can meet your expectations.",
             },
             {
                 ejemplos: '../assets/Illustration/market_shop.png',
