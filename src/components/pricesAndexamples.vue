@@ -124,31 +124,31 @@ export default {
             ],
             // Ilustracines
             illustration: [{
-                ejemplos: '../assets/Illustration/DanoiverCommission.PNG',
+                ejemplos: '../assets/Illustration/DanoiverCommission.jpeg',
                 restricciones: "- Completely rendered illustration, with one or more characters (maximum 4).",
             },
             {
-                ejemplos: '../assets/Illustration/HenryDoeCommission.PNG',
+                ejemplos: '../assets/Illustration/HenryDoeCommission.jpeg',
                 restricciones: "- Completely free background of your choice, I can work on any type of idea you have.",
             },
             {
-                ejemplos: '../assets/Illustration/Krow_Commission_Illustration_flat.png',
+                ejemplos: '../assets/Illustration/IMG_1006.jpg',
                 restricciones: "- I can work in any format you ask me for, whether for printing or any other need.",
             },
             {
-                ejemplos: '../assets/Illustration/otoño.png',
+                ejemplos: '../assets/Illustration/Krow_Commission_Illustration.jpg',
                 restricciones: "- The more detailed jobs may take my time, but I know I can meet your expectations.",
             },
             {
-                ejemplos: '../assets/Illustration/IMG_1006.JPG',
-                restricciones: "",
-            },
-            {
-                ejemplos: '../assets/Illustration/Krow_Commission_Illustration.PNG',
+                ejemplos: '../assets/Illustration/Krow_Commission_Illustration_flat.jpeg',
                 restricciones: "",
             },
             {
                 ejemplos: '../assets/Illustration/market_shop.png',
+                restricciones: "",
+            },
+            {
+                ejemplos: '../assets/Illustration/otoño.png',
                 restricciones: "",
             },
             ]
