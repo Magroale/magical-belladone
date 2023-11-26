@@ -6,12 +6,12 @@
             <section class="mb-4">
                 <!-- Facebook -->
                 <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1"
-                    href="https://twitter.com/MagicaBelladone" target="_blank" role="button" data-mdb-ripple-color="dark"><i
+                    href="https://www.facebook.com/MagicalBelladone" target="_blank" role="button" data-mdb-ripple-color="dark"><i
                         class="fab fa-facebook-f"></i></a>
 
                 <!-- Twitter -->
                 <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1"
-                    href="https://www.facebook.com/MagicalBelladone" target="_blank" role="button" data-mdb-ripple-color="dark"><i
+                    href="https://twitter.com/MagicaBelladone" target="_blank" role="button" data-mdb-ripple-color="dark"><i
                         class="fab fa-twitter"></i></a>
 
                 <!-- Instagram -->
