@@ -1,6 +1,6 @@
 <template>
     <div class="mt-5 pt-1 d-flex flex-column align-items-center justify-content-center">
-        <div class="d-flex flex-column align-items-start justify-content-start"
+        <div class="d-flex flex-column align-items-start justify-content-start ms-5 me-5"
             style="max-width: 70vh; text-align: justify;">
             <h1 style="color: #7b2052; font-size: 28px; font-family:'norwester';">
                 Prices and Payment
@@ -8,7 +8,7 @@
             <p style="color: #7b2052;">{{ this.precioYpago }}</p>
         </div>
 
-        <div class="d-flex flex-column align-items-start justify-content-start"
+        <div class="d-flex flex-column align-items-start justify-content-start ms-5 me-5"
             style="max-width: 70vh; text-align: justify;">
             <h1 style="color: #7b2052; font-size: 28px; padding-top: 5%; font-family:'norwester';">
                 Time frame
@@ -16,7 +16,7 @@
             <p style="color: #7b2052;">{{ this.timeFrame }}</p>
         </div>
 
-        <div class="d-flex flex-column align-items-start justify-content-start"
+        <div class="d-flex flex-column align-items-start justify-content-start ms-5 me-5"
             style="max-width: 70vh; text-align: justify;">
             <h1 style="color: #7b2052; font-size: 28px; padding-top: 5%; font-family:'norwester';">
                 Delivery
@@ -24,7 +24,7 @@
             <p style="color: #7b2052;">{{ this.delivery }}</p>
         </div>
 
-        <div class="d-flex flex-column align-items-start justify-content-start"
+        <div class="d-flex flex-column align-items-start justify-content-start ms-5 me-5"
             style="max-width: 70vh; text-align: justify;">
             <h1 style="color: #7b2052; font-size: 28px; padding-top: 5%; font-family:'norwester';">
                 Things I will NOT draw under any circumstances
@@ -33,7 +33,7 @@
             <p style="color: #7b2052;">{{ this.restricciones2 }}</p>
             <p style="color: #7b2052;">{{ this.restricciones3 }}</p>
         </div>
-        <div class="d-flex flex-column align-items-start justify-content-start"
+        <div class="d-flex flex-column align-items-start justify-content-start ms-5 me-5"
             style="max-width: 70vh; text-align: justify;">
             <h1 style="color: #7b2052; font-size: 28px; padding-top: 5%; font-family:'norwester';">
                 Cancellation & Refunds

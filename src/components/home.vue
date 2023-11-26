@@ -1,11 +1,11 @@
 <template>
     <div>
-        <div class="bg-image d-flex justify-content-center align-items-center"
-            style="background-image: url('../assets/IMG_1141.JPG'); max-height: 100vh; min-height: 100vh;">
+        <div class="bg-image d-flex justify-content-center align-items-center mb-5 pb-5"
+            style="background-image: url('../assets/IMG_1141.JPG');background-size: cover; background-position: center center; max-height: 110vh; min-height: 100vh;">
             <h1 class="text-white text-center" style="font-size: 5rem; width: 25rem; font-family:'norwester';">MAGICAL
                 BELLADONE</h1>
         </div>
-        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mt-5 pt-1" style="">
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mt-5 pt-5 mb-5 pb-5" style="">
             <div class="d-flex justify-content-center mb-3 mb-md-0">
                 <img :src='imagen' class="img-fluid" alt="img" style="max-width:50vh; " />
             </div>
