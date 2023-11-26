@@ -1,15 +1,13 @@
 <template>
     <div>
-        <div d-flex flex-column flex-md-row justify-content-center align-items-center>
-            <div class="bg-image d-flex justify-content-center align-items-center"
-                style="background-image: url('../assets/IMG_1141.JPG'); max-height: 100vh; min-height: 100vh;">
-                <h1 class="text-white text-center" style="font-size: 5rem; width: 25rem; font-family:'norwester';">MAGICAL
-                    BELLADONE</h1>
-            </div>
+        <div class="bg-image d-flex justify-content-center align-items-center"
+            style="background-image: url('../assets/IMG_1141.JPG'); max-height: 100vh; min-height: 100vh;">
+            <h1 class="text-white text-center" style="font-size: 5rem; width: 25rem; font-family:'norwester';">MAGICAL
+                BELLADONE</h1>
         </div>
         <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mt-5 pt-1" style="">
             <div class="d-flex justify-content-center mb-3 mb-md-0">
-                <img :src='imagen' class="img-fluid" alt="img" style="max-width:50vh; max-width: 70vh;" />
+                <img :src='imagen' class="img-fluid" alt="img" style="max-width:50vh; " />
             </div>
             <div class="d-flex flex-column justify-content-center align-items-center text-center" style="max-width:50vh;">
                 <h2 style="font-family: 'Franklin Gothic', sans-serif; color: #7b2052;" class="mb-3">
