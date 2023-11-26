@@ -1,62 +1,49 @@
 <template>
-  <nav data-mdb-navbar-init class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
-    <!-- Container wrapper -->
+  <nav data-mdb-navbar-init class="navbar navbar-expand-lg navbar-light" style="background-color: #f8b2ca;">
+
     <div class="container-fluid">
-      <!-- Toggle button -->
-
-
-
       <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarCenteredExample"
         aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </button>
-
-      <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
-        <a class="navbar-brand me-2" href="/">
-          <h1 class="text-center fs-2 text-wrap" style="max-width: 15rem;">Magical Belladone</h1>
-        </a>
-        <!-- Left links -->
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Sketch</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Commission</a>
-          </li>
-          <!-- Navbar dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
-              aria-expanded="false">
-              Redes
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li>
-                <a class="dropdown-item" href="https://www.patreon.com/Magical_Belladone">Patreon</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="https://ko-fi.com/belladone">Ko-fi</a>
-              </li>
-              <li>
-                  <hr class="dropdown-divider" />
+      <div class="collapse navbar-collapse d-flex flex-column align-items-center justify-content-center"
+        id="navbarCenteredExample">
+        <div class="d-flex flex-grow-1 justify-content-center">
+          <a class="navbar-brand" href="/">
+            <h1 class="text-center fs-2 text-wrap" @click="selectTab('home')"
+              style="max-width: 20rem; color: #7b2052; font-family:'norwester';">
+              Magical Belladone</h1>
+          </a>
+        </div>
+        <div class="d-flex flex-row p-2" style="">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                aria-expanded="false" style="color: #7b2052;">
+                Commissions
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #f8b2ca;">
+                <li>
+                  <a class="dropdown-item" @click="selectTab('pricesAndexamples')" style="color: #7b2052;">Prices &
+                    Examples</a>
                 </li>
-              <li>
-                <a class="dropdown-item" href="https://twitter.com/MagicaBelladone">Twitter</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="https://www.facebook.com/MagicalBelladone">Facebook</a>
+                <li>
+                  <a class="dropdown-item" @click="selectTab('termsAndServices')" style="color: #7b2052;">Terms of Service</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://forms.gle/XG8z9S88g3mer9Tz6" target="_blank" style="color: #7b2052;">Submit</a>
+                </li>
+              </ul>
+            </li>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="https://t.me/Magical_Belladone" target="_blank" style="color: #7b2052;">Contact</a>
               </li>
             </ul>
-          </li>
-        </ul>
-        <!-- Left links -->
+          </ul>
+        </div>
       </div>
-      <!-- Collapsible wrapper -->
     </div>
-    <!-- Container wrapper -->
   </nav>
 </template>
 
@@ -65,6 +52,11 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  methods: {
+    selectTab(tab) {
+      this.$emit('tabClick', tab);
+    }
   }
 }
 </script>
