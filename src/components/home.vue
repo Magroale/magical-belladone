@@ -4,6 +4,7 @@
             style="background-image: url('../assets/IMG_1141.JPG');background-size: cover; background-position: center center; max-height: 110vh; min-height: 100vh;">
             <h1 class="text-white text-center" style="font-size: 5rem; width: 25rem; font-family:'norwester';">MAGICAL
                 BELLADONE</h1>
+            <a :href="link" class="decorated-link" :title="imagePreview" v-on:mouseover="updateMetaTags"></a>
         </div>
         <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mt-5 pt-5 mb-5 pb-5" style="">
             <div class="d-flex justify-content-center mb-3 mb-md-0">
@@ -31,10 +32,27 @@ export default {
     data() {
         return {
             imagen: '../assets/IMG_1121.PNG',
-            aboutme: "Hello! My name is Belladone but you can refer to me as Bella, I am a freelance magical illustrator who loves to create illustration filled with Magic Here you can get information about me and my art. Enjoy your stay in this beautiful hell ~"
+            aboutme: "Hello! My name is Belladone but you can refer to me as Bella, I am a freelance magical illustrator who loves to create illustration filled with Magic Here you can get information about me and my art. Enjoy your stay in this beautiful hell ~",
+            link: 'https://magical-belladone.web.app/',
+            imagePreview: '../assets/IMG_PREVIEW.jpg'
         }
     },
-    methods: {}
+    metaInfo() {
+        return {
+            title: 'Magical Belladone',
+            meta: [
+                { property: 'og:title', content: 'Magical Belladone' },
+                { property: 'og:description', content: 'Contact page and a sample of my work' },
+                { property: 'og:image', content: this.imagePreview },
+                { property: 'og:url', content: this.link }
+            ]
+        }
+    },
+    methods: {
+        updateMetaTags() {
+            this.$meta().refresh();
+        }
+    }
 }
 </script>
   
@@ -57,6 +75,16 @@ export default {
     /* Ajusta la opacidad según tus preferencias */
     pointer-events: none;
     /* Evita que el elemento de ruido interfiera con los eventos */
+}
+
+/* Estilos para los enlaces decorados */
+.decorated-link {
+    color: #007BFF;
+    /* color del enlace */
+    text-decoration: underline;
+    /* subrayado */
+    font-weight: bold;
+    /* negrita */
 }
 </style>
   

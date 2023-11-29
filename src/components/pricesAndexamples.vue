@@ -141,11 +141,12 @@ export default {
             },
             {
                 ejemplos: '../assets/Illustration/market_shop.png',
-                restricciones: "",
             },
             {
                 ejemplos: '../assets/Illustration/otoño.png',
-                restricciones: "",
+            },
+            {
+                ejemplos: '../assets/Illustration/IMG_1006.jpg',
             },
             ]
         }
