@@ -7,16 +7,16 @@
 
         <div class="d-flex flex-wrap align-items-center justify-content-center">
             <div class="d-flex flex-column align-items-center justify-content-center"
-                style="margin: 2em; max-height: 60rem; max-width: 24rem;" v-for="(descrip, indice) in colorBust"
-                :key="indice">
+                style="margin: 2em; max-height: 60rem; max-width: 24rem;" v-for="(descrip, index) in colorBust"
+                :key="index">
                 <img :src="descrip.ejemplos" class="img-thumbnail" alt="Img"
                     style="max-width: 30rem; max-height: 22rem; cursor: pointer;"
                     @click="openLightbox(descrip.ejemplos, 'colorBust')" />
             </div>
         </div>
 
-        <div class="d-flex flex-column align-items-start justify-content-start" v-for="(descrip, indice) in colorBust"
-            :key="indice" style="padding-left: 8%; padding-right: 25%;">
+        <div class="d-flex flex-column align-items-start justify-content-start" v-for="(descrip, index) in colorBust"
+            :key="index" style="padding-left: 8%; padding-right: 25%;">
             <p class="card-text text-center text-wrap mt-2 " style="font-size: 25px; color: #7b2052;">{{
                 descrip.restricciones }}</p>
         </div>
@@ -29,15 +29,15 @@
         <div class="d-flex flex-wrap align-items-center justify-content-center">
 
             <div class="d-flex flex-column align-items-center justify-content-center"
-                style="margin: 2em; max-height: 60rem; max-width: 24rem;" v-for="(descrip, indice) in magicFood"
-                :key="indice">
+                style="margin: 2em; max-height: 60rem; max-width: 24rem;" v-for="(descrip, index) in magicFood"
+                :key="index">
                 <img :src="descrip.ejemplos" class="img-thumbnail" alt="Img"
                     style="max-width: 30rem; max-height: 22rem; cursor: pointer;"
                     @click="openLightbox(descrip.ejemplos, 'magicFood')" />
             </div>
         </div>
-        <div class="d-flex flex-column align-items-start justify-content-start" v-for="(descrip, indice) in magicFood"
-            :key="indice" style="padding-left: 8%; padding-right: 25%;">
+        <div class="d-flex flex-column align-items-start justify-content-start" v-for="(descrip, index) in magicFood"
+            :key="index" style="padding-left: 8%; padding-right: 25%;">
             <p class="card-text text-center text-wrap mt-2" style="font-size: 25px; color: #7b2052;">{{
                 descrip.restricciones }}</p>
         </div>
@@ -46,24 +46,27 @@
         <div class="d-flex flex-column align-items-center justify-content-center">
             <h4 style="color: #7b2052; padding-top: 5%; font-family:'norwester';">✦ Illustration ✦</h4>
             <h4 style="color: #7b2052; padding-top: 5%; font-family:'norwester';"> Flat Color - $55 USD - $800MXN </h4>
-            <h4 style="color: #7b2052; padding-top: 2%; font-family:'norwester';"> Full Illustration - $ 80USD - $1200MXN</h4>
+            <h4 style="color: #7b2052; padding-top: 2%; font-family:'norwester';"> Full Illustration - $ 80USD - $1200MXN
+            </h4>
         </div>
+
         <div class="d-flex flex-wrap align-items-center justify-content-center">
             <div class="d-flex flex-column align-items-center justify-content-center"
-                style="margin: 2em; max-height: 60rem; max-width: 24rem;" v-for="(descrip, indice) in illustration"
-                :key="indice">
+                style="margin: 2em; max-height: 60rem; max-width: 24rem;" v-for="(descrip, index) in illustration"
+                :key="index">
                 <img v-lazy="descrip.ejemplos" class="img-thumbnail" alt="Img"
                     style="max-width: 30rem; max-height: 22rem; cursor: pointer;"
                     @click="openLightbox(descrip.ejemplos, 'illustration')" />
             </div>
         </div>
-        <div class="d-flex flex-column align-items-start justify-content-start" v-for="(descrip, indice) in illustration"
-            :key="indice" style="padding-left: 8%; padding-right: 25%;">
+
+        <div class="d-flex flex-column align-items-start justify-content-start" v-for="(descrip, index) in illustration"
+            :key="index" style="padding-left: 8%; padding-right: 25%;">
             <p class="card-text text-center text-wrap mt-2" style="font-size: 25px; color: #7b2052;">{{
                 descrip.restricciones }}</p>
         </div>
 
-        <vue-image-lightbox v-if="lightboxOpen" :media="lightboxImages" :start-position="lightboxIndex"
+        <vue-image-lightbox v-if="lightboxOpen" :showThumbs="Thumbs" :media="lightboxImages" :startAt="lightboxIndex"
             @onClosed="lightboxClosed" />
     </div>
 </template>
@@ -83,6 +86,7 @@ export default {
     data() {
         return {
             lightboxOpen: false,
+            Thumbs : true,
             lightboxImages: [],
             lightboxIndex: 0,
             // Bustos
@@ -141,12 +145,15 @@ export default {
             },
             {
                 ejemplos: '../assets/Illustration/market_shop.png',
+                restricciones:""
             },
             {
                 ejemplos: '../assets/Illustration/otoño.png',
+                restricciones:""
             },
             {
                 ejemplos: '../assets/Illustration/IMG_1006.jpg',
+                restricciones:""
             },
             ]
         }
