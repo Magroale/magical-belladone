@@ -28,9 +28,9 @@
                   <a class="dropdown-item" @click="selectTab('termsAndServices')" style="color: #7b2052;">Terms of
                     Service</a>
                 </li>
-                <li>
+                <!-- <li>
                   <a class="dropdown-item" @click="selectTab('dashboardMagical')" style="color: #7b2052;">DashBoard</a>
-                </li>
+                </li> -->
                 <li>
                   <a class="dropdown-item" href="https://forms.gle/XG8z9S88g3mer9Tz6" target="_blank"
                     style="color: #7b2052;">Submit</a>
