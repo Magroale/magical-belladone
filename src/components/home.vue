@@ -8,7 +8,7 @@
         </div>
         <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mt-5 pt-5 mb-5 pb-5" style="">
             <div class="d-flex justify-content-center mb-3 mb-md-0">
-                <img :src='imagen' class="img-fluid" alt="img" style="max-width:50vh; " />
+                <img :src='imagen' class="img-fluid" alt="img" style="max-width: 50vh; border-radius: 50%; border: 4px solid #7b2052;" />
             </div>
             <div class="d-flex flex-column justify-content-center align-items-center text-center" style="max-width:50vh;">
                 <h2 style="font-family: 'Franklin Gothic', sans-serif; color: #7b2052;" class="mb-3">
@@ -31,7 +31,7 @@ export default {
     },
     data() {
         return {
-            imagen: '../assets/IMG_1121.PNG',
+            imagen: '../assets/IMG_1438.JPG',
             aboutme: "Hello! My name is Belladone but you can refer to me as Bella, I am a freelance magical illustrator who loves to create illustration filled with Magic Here you can get information about me and my art. Enjoy your stay in this beautiful hell ~",
             link: 'https://magical-belladone.web.app/',
             imagePreview: '../assets/IMG_PREVIEW.jpg'

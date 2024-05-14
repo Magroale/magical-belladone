@@ -20,7 +20,7 @@ export default {
     home,
     footerPage,
     pricesAndexamples,
-    termsAndServices
+    termsAndServices,
   },
   data(){
     return{

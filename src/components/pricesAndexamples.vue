@@ -125,6 +125,10 @@ export default {
                 ejemplos: '../assets/MagicFood/IMG_0995.JPG',
                 restricciones: "- I work with any type of size depending on your preference and need.",
             },
+            {
+                ejemplos: '../assets/MagicFood/IMG_1202.JPG',
+                restricciones: "",
+            },
             ],
             // Ilustracines
             illustration: [{
